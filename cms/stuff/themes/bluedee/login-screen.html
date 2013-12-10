@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{LANG_ABBR}" xml:lang="{LANG_ABBR}">
+<head>
+  {META_TAGS}
+
+  <title>{TITLE} | MNews</title>
+</head>
+
+<body id="login-screen">
+
+<div id="login-main">
+
+  <a href="./"><img src="./stuff/themes/{THEME}/img/login-logo.png" width="330" height="122" alt="MNews" /></a>
+
+  <p class="login-weblink">{LINK_BACK_TO_WEB}</p>
+  
+  <div id="login-box">
+
+    {INFO_MESSAGE}
+
+    <form action="./mn-login.php" method="post" id="form-{ACTION}">
+      <fieldset>
+      
+        {INPUTS}
+        {CHECKBOX}
+        {BUTTON}
+        
+      </fieldset>
+    </form>
+  </div>
+  
+  <p id="links"><span>{LINK_LOST_PASS}</span>{LINK_REGISTER}</p>
+  
+  
+  <div id="login-footer"><div>
+    {COPYRIGHT}
+  </div></div>
+  
+</div>
+
+{LANG_SELECT_BAR}
+
+</body>
+</html>

@@ -1,0 +1,1038 @@
+/*
+** ----- BODY, HTML definitions --------------------------------------------------------------------
+*/
+html, body {padding: 0; margin: 0;}
+body {background: %%background_color%%; color: %%color1%%; font-family: Verdana, Arial, lucida, sans-serif; text-align: center;}
+
+
+
+
+
+/*
+** ----- MAIN PAGE LAYOUT --------------------------------------------------------------------------
+*/
+#main {
+  text-align: center;
+  margin: 0 auto; padding: 0;
+}
+
+#header {
+	background: %%color9%%;
+	height: 50px;
+	border-bottom: 1px solid %%color7%%;
+	box-shadow: 0px 0px 9px #aaa;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+#header a#mnews {
+  display: inline-block;
+  float: left;
+  margin: 8px 20px 0 20px;
+  height: 22px;
+  padding: 8px 20px 5px 20px;
+}
+#header a#mnews:hover {
+	background: %%color3%%;
+	color: %%color2%%;
+}
+
+
+#user-info {position: absolute; right: 30px; top: 0; font-size: 0.8em; height: 23px; padding: 4px 5px 0 0;}
+#user-info a {color: %%color6%%;}
+#user-info strong a {color: %%color6%%;}
+
+#lang-img {cursor: pointer; right: 5px; position: absolute; top: 7px;}
+#lang-select {
+  background: %%color8%%;
+  box-shadow: 0 0 8px #aaa;
+  font-size: 0.85em;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0;
+  position: absolute;
+  right: 30px;
+  text-align: left;
+  top: 0;
+  width: 230px;
+  z-index: 100;
+}
+#lang-select li a, #lang-select li span.act {border: 0; color: %%color5%%; display: block; margin: 0 10px; padding: 3px 10px; text-decoration: none;}
+#lang-select li span.act  {color: %%color6%%;}
+#lang-select li a span {text-decoration: underline;}
+#lang-select li a:hover span {text-decoration: none;}
+
+
+#content {
+  margin: 0 auto;
+  padding: 60px 10px 50px 10px;
+  clear: both;
+  text-align: justify;
+  z-index: 100;
+  width: 960px;
+}
+
+.content-text {font-size: 0.9em; line-height: 1.3; padding: 5px 20px;}
+.content-in-text {font-size: 0.9em; line-height: 1.3;}
+.content-text .simurl, .content-text .simbutton, .content-text button {font-size: 1em;}
+
+#footer {
+  border-top: 1px solid %%color7%%;
+  height: 30px;
+  margin: 0 auto;
+  width: 400px;
+}
+#footer div {
+  color: %%color6%%;
+  font-size: 0.8em;
+  z-index: 2;
+  padding-top: 7px;
+}
+#footer div a {color: %%color6%%;}
+
+
+
+
+
+/*
+** ----- MAIN MENU ---------------------------------------------------------------------------------
+*/
+ul.menu {list-style-type: none; margin: 13px 0 0 0;	padding: 0;}
+ul.menu li {float: left; font-size: 0.8em;
+}
+ul.menu li a {
+  height: 23px;
+  display: inline-block;
+  margin: 0 2px 0 3px;
+  padding: 4px 15px;
+  color: %%color5%%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul.menu li a span {font-size: 0.95em; text-decoration: underline;}
+ul.menu li a:hover span {color: %%color1%%; text-decoration: none;}
+
+
+
+
+
+/*
+** ----- LOGIN SCREEN ------------------------------------------------------------------------------
+*/
+#login-main {
+  height: auto;
+  _height: 100%; /* IE6 */
+  margin: 0 auto;
+  min-height: 100%;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 420px;
+}
+#login-logo {color: %%color3%%; display: block; padding: 50px 0 10px 0; font-size: 4em; text-decoration: none;}
+#login-logo:hover {color: %%color4%%;}
+#login-main a img {color: %%color9%%;}
+p.login-weblink {font-size: 0.8em; text-align: left; position: absolute; margin: 0; padding: 5px; top: 0; left: 0;}
+p.login-weblink a {color: %%color6%%;}
+p.login-weblink a:hover {text-decoration: none;}
+
+#login-screen #lang-img {cursor: pointer; left: auto; right: 10px; position: absolute; top: 10px;}
+#login-screen #lang-select {
+  left: auto;
+  position: absolute;
+  right: 40px;
+  top: 0;
+}
+
+#login-box {
+  height: 270px;
+  margin: 0 auto;
+  width: 420px;
+}
+
+#login-box form {
+  margin: 0;
+  padding: 0 20px 0 20px;
+  text-align: center;
+}
+#login-box form fieldset {margin: 0; padding: 0;}
+#login-box form label {
+  color: %%color5%%;
+  display: block;
+  font-size: 0.9em;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 90px;
+  text-align: left;
+}
+#login-box form #login-register {text-align: left; padding: 0 0 0 5px;}
+#login-box form #login-login label#label_login {margin: 0;}
+#login-box form #login-register label {float: left; width: 120px; margin: 0 10px 0 0; padding: 10px 0 0 0; font-weight: bold; text-align: right;}
+#login-box form input.text {
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 5px;
+  width: 200px;
+}
+#login-box form input.checkbox {margin: 0 auto;}
+#login-box form label.perm-login {display: inline; padding: 0; margin: 0;}
+#login-box form #login-register input {margin: 2px 0;}
+#login-box form button {margin: 10px 0 0 0;}
+#login-box form#form-register button {margin: 5px 0 0 0;}
+#login-box form#form-login p.pl {font-size: 0.8em; margin: 0; padding: 5px 0 0 0; text-align: center;}
+
+#login-screen p#links {
+  font-size: 0.8em;
+  padding: 0 20px;
+  margin: 0;
+  text-align: left;
+  width: 380px;
+}
+#login-screen p#links span {float: right;}
+
+#login-footer {
+  border-top: 1px solid %%color7%%;
+  clear: both;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 400px;
+}
+#login-footer div {
+  font-size: 0.8em;
+  padding-top: 5px;
+  color: %%color5%%;
+}
+#login-footer div a {color: %%color1%%;}
+
+.login-msg {
+  font-size: 0.85em;
+  font-weight: bold;
+  height: 25px;
+  text-align: center;
+  padding-top: 20px;
+}
+.login-msg img {display: none;}
+.msg-error, .msg-warning {color: #ac1111;}
+.msg-main {color: %%color5%%;}
+.msg-info {color: #005b86;}
+.msg-ok {color: #259E00;}
+
+
+
+
+
+
+
+
+
+
+/*
+** ----- HEADINGS, LINKS, FORMS --------------------------------------------------------------------
+*/
+a {color: %%color3%%;}
+a:hover {text-decoration: none;}
+a.custom {text-decoration: none; border-bottom: 1px solid %%color3%%;}
+a.custom:hover {border: none;}
+.simurl {border-bottom: 1px dotted %%color3%%; color: %%color3%%; text-decoration: none;}
+.simurl:hover {border-bottom: 0;}
+a img {border: 0;}
+
+.simurl img, td.labels img, form label img, legend img, button img, .simbutton img, h3 a img {display: none;}
+
+
+input, select {background: %%color2%%; padding: 2px;}
+input.submit {background: %%color9%%; color: %%color1%%; cursor: pointer; padding: 3px 8px;}
+input.submit:hover {border: 1px solid %%color6%%;}
+form fieldset {border: 0;}
+form fieldset legend {text-align: left; margin: 0; padding: 5px 10px; border: 1px solid %%color7%%; font-size: 0.9em;}
+form input.text {font-size: 1em; width: 300px;}
+form input.medium {font-size: 1em; width: 150px;}
+form input.text, form input.custom, form select.custom, form input.medium {padding: 5px;}
+form input.autowidth {width: auto;}
+form select.long {width: 312px;}
+form p.ta-description {text-align: left; margin: 20px 0 0 0;}
+
+
+div.simbutton {text-align: center;}
+button, div.simbutton a {
+  background: %%color9%%;
+  border: 1px solid %%color2%%;
+  box-shadow: 0 0 5px #aaa;
+  color: %%color5%%;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  padding: 8px 5px 8px 0;
+  text-decoration: none;
+  width: 200px;
+}
+button img, div.simbutton a img {position: relative; top: 2px;}
+button {margin: 0 5px; padding: 10px 0;}
+div.simbutton a {display: block;}
+button:hover, div.simbutton a:hover {box-shadow: 0 0 5px #666; color: %%color1%%;}
+
+form input[type="text"], form input[type="submit"], form input[type="button"], form input[type="file"], form input[type="password"], form select, form textarea {
+  border: 1px solid %%color7%%;
+}
+
+iframe {border: 0;}
+
+
+
+
+
+/*
+** ----- INFO MESSAGES (warnings, errors, ok messages) ---------------------------------------------
+*/
+.i-main, .i-error, .i-ok, .i-info {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 5px 10px;
+  padding: 10px;
+  text-align: center;
+}
+.i-main {color: %%color3%%;}
+.i-error {color: #C94135;}
+.i-info {color: #1847a1;}
+.i-ok {color: #26A400;}
+.i-main img, .i-error img, .i-ok img, .i-info img {display: none;}
+
+.mn-warnings {background: #f9dbdb; border: 2px solid #d86d6d; font-size: 0.85em; margin: 10px 5px; padding: 10px;}
+.mn-warnings ul li {list-style-image: url('../../img/icons/warning.png'); margin: 5px 10px 5px 20px; padding: 2px 0 2px 5px;}
+.mn-warnings ul li span {color: %%color6%%; font-style: italic;}
+
+.show-post h2 {color: %%color6%%;}
+.show-post {font-size: 0.7em; line-height: 1.4;}
+
+.mn-highlight {background: yellow;}
+
+
+
+
+
+/*
+** ----- DASHBOARD ---------------------------------------------------------------------------------
+*/
+#version-info {color: %%color9%%; font-size: 0.9em; background: %%color6%%; margin: 10px 5px; padding: 10px;}
+#version-info a {color: %%color2%%;}
+#version-info .simbutton a {color: %%color5%%; margin: 0 auto;}
+
+.db-info {background: %%color8%%; border: 1px solid %%color6%%; color: %%color5%%; font-size: 0.8em; margin: 10px 5px; padding: 10px;}
+.db-info strong {color: %%color3%%; font-size: 1em;}
+.db-info textarea {color: %%color5%%; height: 50px; margin: 0 20px; width: 800px;}
+.db-info p {margin: 0; padding: 0;}
+
+#mn-post {font-size: 0.85em; line-height: 1.4; padding: 10px 80px 0 80px;}
+#mn-post #comments-title {margin-top: 40px;}
+#mn-post .comment-info {border-top: 1px solid %%color7%%; color: %%color6%%; font-weight: bold; padding-top: 15px; text-align: center;}
+
+#mn-comment-form {margin: 20px 0 0 0;}
+#mn-comment-form p, #mn-comment-form label {display: none;}
+#mn-comment-form table {font-size: 0.9em;}
+#mn-comment-form fieldset {border: 1px solid %%color7%%; padding: 20px; width: 430px; margin: 0 auto;}
+#mn-comment-form legend {color: %%color6%%;}
+#mn-comment-form textarea {height: 140px; padding: 3px; width: 420px;}
+#mn-comment-form input {margin: 10px 0 0 0; padding: 10px 0; width: 212px;}
+#mn-comment-buttons {margin: 0 0 0 4px;}
+#mn-comment-buttons img {cursor: pointer; padding: 3px; border: 1px solid %%color7%%; margin-left: -4px;}
+.mn-success {color: forestgreen; font-weight: bold; margin: 10px 0 0 0; text-align: center;}
+
+#db-links {position: absolute; top: 70px; padding: 0 5px; width: 950px;}
+#db-post-link {border: 1px solid %%color2%%; color: %%color5%%; float: left; font-size: 0.9em; height: 23px; padding: 9px 15px 0 15px; text-decoration: none;}
+#db-post-link img {display: none;}
+/* #db-post-link:hover {background: url('./img/s-button.png') bottom left no-repeat;} */
+#db-post-link span {text-decoration: underline; position: relative; top: -2px;}
+#db-post-link:hover, #db-config-link:hover {
+	background: %%color9%%;
+	border-color: %%color8%%;
+}
+#db-post-link:hover span {text-decoration: none;}
+#db-config-link {border: 1px solid %%color2%%; float: right; height: 23px; padding: 7px 10px 2px 10px;}
+/* #db-config-link:hover {background: url('./img/small-button.png') bottom left no-repeat;} */
+
+
+
+
+table.widget {border: 1px solid %%color7%%; border-bottom: 0; border-collapse: collapse; font-size: 0.9em; margin: 6px 5px; width: 468px;}
+table.widget tr td, table.widget tr th {background: %%color2%%; border-bottom: 1px solid %%color7%%; padding: 5px;}
+table.widget tr th {background: %%color9%%; color: %%color5%%; padding: 10px; text-align: center;}
+table.widget tr td.date {color: %%color6%%; width: 80px;}
+table.widget tr td.edit {padding: 0; width: 20px;}
+table.widget tr td.edit a, table.widget tr td.edit img {display: none;}
+table.widget tr td.edit p {margin: 0; padding: 5px 0 0 0;}
+table.widget tr td.c_author {width: 130px; color: %%color5%%;}
+table.widget tr td.c_author a {font-size: 0.75em;}
+table.widget tr td.rss-item strong.title {display: block; margin: 5px 0 5px 10px;}
+table.widget tr td.rss-item p {font-size: 0.8em; line-height: 1.4; margin: 0; padding: 0;}
+table.widget tr td div.comment-text {background: %%color9%%; border: 1px solid %%color8%%; font-size: 0.7em; height: 40px; margin: 0; overflow: auto; width: 245px;}
+table.widget tr:hover td.rss-item {background: %%color2%%;}
+table.widget tr:hover p.c_links a, table.widget tr:hover .info {display: inline;}
+table.widget tr:hover td {background: %%color10%%;}
+table.widget tr:hover td.edit a, table.widget tr:hover td.edit img, table.widget tr:hover span.links {display: inline;}
+
+.w1, .w3, .w5 {clear: left;  float: left;}
+.w2, .w4, .w6 {clear: right; float: right;}
+
+form#db-config-form {text-align: center; margin: 0 auto; padding: 30px 0 0 0; width: 320px;}
+form#db-config-form table tr td.labels, form#db-config-form table tr td.inputs {text-align: left;}
+form#db-config-form table tr td.selects {padding: 0 0 0 10px; text-align: left;}
+form#db-config-form table tr td.selects select {width: 60px;}
+
+
+
+
+
+/*
+** ----- TABLE - common values for posts, categories, users lists  ---------------------------------
+*/
+table.tablesorter {border: 1px solid %%color7%%; border-bottom: 0; border-collapse: collapse; font-size: 0.8em; margin: 0 auto; width: 100%;}
+
+table.tablesorter tr th, table.tablesorter tr td {border-bottom: 1px solid %%color7%%; overflow: hidden;}
+table.tablesorter tr td {background: %%color2%%; padding: 5px 0 5px 5px; text-align: left;}
+table.tablesorter tr td.c {text-align: center; padding: 0;}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {background: %%color9%%; color: %%color5%%; text-align: left;}
+table.tablesorter thead tr th {padding: 10px 0 10px 20px; cursor: pointer;}
+table.tablesorter tfoot tr th, table.tablesorter tfoot tr th:hover {padding: 5px 0 5px 20px; background: %%color9%%;}
+
+table.tablesorter thead tr th.num.headerSortDown {background: %%color8%% url('../../stuff/img/icons/sort-num-asc.png') 2px 10px no-repeat;}
+table.tablesorter thead tr th.num.headerSortUp {background: %%color8%% url('../../stuff/img/icons/sort-num-desc.png') 2px 10px no-repeat;}
+table.tablesorter thead tr th.date.headerSortDown {background: %%color8%% url('../../stuff/img/icons/sort-date-asc.png') 2px 10px no-repeat;}
+table.tablesorter thead tr th.date.headerSortUp {background: %%color8%% url('../../stuff/img/icons/sort-date-desc.png') 2px 10px no-repeat;}
+table.tablesorter thead tr th.headerSortDown {background: %%color8%% url('../../stuff/img/icons/sort-asc.png') 2px 10px no-repeat;}
+table.tablesorter thead tr th.headerSortUp {background: %%color8%% url('../../stuff/img/icons/sort-desc.png') 2px 10px no-repeat;}
+table.tablesorter tr th:hover {background: %%color8%% url('../../stuff/img/icons/sort.png') 2px 10px no-repeat;}
+
+table.tablesorter tr:hover td {background: %%color10%%;}
+table.tablesorter tr:hover .links, table.tablesorter tr:hover .comment-links, table.tablesorter tr:hover .info {display: inline;}
+
+table.tablesorter tr td .links, table.tablesorter tr td .comment-links, table.tablesorter tr td .info {font-size: 0.85em;}
+table.tablesorter tr td .links a, table.tablesorter tr td .info a, table.tablesorter tr td .links span.simurl {color: %%color6%%; text-decoration: underline; border: 0;}
+table.tablesorter tr td .links a:hover, table.tablesorter tr td .info a:hover, table.tablesorter tr td .links span.simurl:hover {text-decoration: none;}
+table.tablesorter tr td .comment-links a {color: %%color3%%;}
+table.tablesorter tr td .trivial, table.tablesorter tr td.trivial {color: %%color6%%; font-style: italic;}
+table.tablesorter tr td .info {color: %%color6%%;}
+table.tablesorter tr td a.main-link {font-weight: bold;}
+table.tablesorter tr td a.main-link span.ext {color: %%color6%%;}
+table.tablesorter tr td a.trash {color: darkred;}
+table.tablesorter tr td form {display: inline;}
+
+form.filter {text-align: center; clear: both; padding: 10px 0; margin: 0; border: 1px solid %%color8%%; background: %%color8%%;}
+form.filter #search {margin: 5px 0 0 0;}
+form.filter #search input#q {width: 200px;}
+form.filter select {width: 160px;}
+form.filter select option.description {color: %%color6%%;}
+
+#pager {margin: 0 auto; margin-top: 5px; margin-bottom: 5px; padding: 0; text-align: center; width: 300px;}
+#pager input {margin: 0; padding: 5px 3px; width: 30px; text-align: center; background: transparent; color: %%color6%%; font-weight: bold; border: 0;}
+#pager img {cursor: pointer;}
+.custom-pager {position: relative; top: -28px;}
+
+.no-values {font-style: italic; text-align: center;}
+
+
+
+
+
+/*
+** ----- POSTS ### edit/delete list  ---------------------------------------------------------------
+*/
+table#posts-list thead tr th#cell-post {width: 300px;}
+table#posts-list thead tr th#cell-author {width: 140px;}
+table#posts-list thead tr th#cell-cat {width: 140px;}
+table#posts-list thead tr th#cell-status {width: 100px;}
+table#posts-list thead tr th#cell-comments {width: 30px;}
+table#posts-list thead tr th#cell-date {width: 70px;}
+
+table#posts-list tr td.cell-post {padding-right: 20px;}
+table#posts-list tr td a:hover {text-decoration: none;}
+
+table#posts-list tr td .short_story {color: %%color5%%; font-size: 0.8em; padding: 5px 0; text-align: justify;}
+table#posts-list tr td .future {color: %%color8%%; font-style: italic;}
+
+table#posts-list tr td span.status_1 {color: #008000;} /* green */
+table#posts-list tr td span.status_2 {color: #0072a8;} /* blue */
+table#posts-list tr td span.status_3 {color: #ffa500;} /* orange */
+table#posts-list tr td span.status_4 {color: #ff0000;} /* red */
+table#posts-list tr td span.status_5 {color: #ff0000;} /* red */
+table#posts-list tr td span.status_6 {color: #b10dc9;} /* magenta */
+
+.mce-add-image {margin: 0 10px 0 0;}
+.mce-add-image .simurl {font-size: 0.7em; position: relative; bottom: 3px;}
+.mce-add-image:hover .simurl {border: 0;}
+
+
+
+
+/*
+** ----- POSTS ### Add/Edit post form --------------------------------------------------------------
+*/
+#posts-add-edit {margin: 0; padding: 0;}
+#posts-add-edit fieldset {border: 0; text-align: center; margin: 0; padding: 0;}
+#posts-add-edit input.file {padding: 5px; width: 300px;}
+#posts-add-edit textarea {border: 1px solid %%color7%%; width: 719px; height: 197px; margin: 0; padding: 5px;}
+#posts-add-edit textarea#full_story {height: 347px;}
+#posts-add-edit .ta-wrap {margin: 0 0 0 125px; text-align: left;}
+#posts-add-edit p.ta-description {padding: 0 125px;}
+#posts-add-edit #full-story-wrap p.ta-description {padding: 0 10px;}
+#posts-add-edit p.r {margin: 0 125px 15px 0;}
+#posts-add-edit p.l {margin: 0 0 15px 125px;}
+#posts-add-edit p.c {margin: 10px 0 20px 0;}
+#posts-add-edit .wysiwyg-toggle {cursor: pointer; float: right;}
+#posts-add-edit .w2 {padding: 0 100px 0 0;}
+#posts-add-edit #settings, #posts-add-edit #tags {width: 710px;}
+#posts-add-edit #settings-in table tr td {vertical-align: top;}
+#posts-add-edit #settings-in table tr td.labels, #posts-add-edit #tags-in table tr td.labels {width: 120px;}
+
+#post-add-cat {background: %%color9%%; border: 1px solid %%color7%%; margin-top: -71px; padding: 7px 11px; position: absolute;}
+#post-add-cat span {font-size: 0.7em;}
+#post-img-add-cat {position: relative; top: 3px;}
+
+#table-posts-add-edit {margin: 0 0 0 125px; text-align: left;}
+#table-posts-add-edit tr td.labels {width: 150px;}
+#table-posts-add-edit tr td.inputs {width: 500px;}
+#table-posts-add-edit tr td .trivial {font-size: 0.8em;}
+
+.toggles {font-size: 0.9em;}
+
+.p-form #settings, .p-form #tags, .p-form #info {margin: 0 auto; margin-top: 10px; text-align: left; font-size: 0.9em;}
+.p-form #settings-in, .p-form #tags-in, .p-form #info-in {border: 1px solid %%color8%%; background: %%color9%%; padding: 10px 20px; margin-bottom: 10px;}
+.p-form #tags-in {padding: 10px 10px 10px 20px;}
+.p-form #tags-in ul.tags {list-style-type: none; margin: 5px 0 0 0; max-height: 400px; overflow: auto; padding: 0;}
+.p-form #tags-in ul.tags li {display: block; float: left; font-size: 0.75em; padding: 3px 0; width: 220px;}
+.p-form #tags-in .fr {font-size: 0.75em; padding: 0 10px 0 0;}
+.p-form #tags-in label {cursor: pointer;}
+.p-form #tags-in strong {color: %%color5%%;}
+.p-form #tags-in #tag-add {clear: both; padding: 10px 0 0 0;}
+.p-form #tags-in #new_tag {padding: 3px;}
+.p-form #settings-in table {text-align: left; border-collapse: collapse; width: 100%;}
+.p-form #settings-in table tr td {padding: 5px 0 5px 10px;}
+.p-form #settings-in table tr:hover td {background: %%color10%%;}
+.p-form #settings-in table tr td ul {list-style-type: none; margin: 0; padding: 0;}
+.p-form #settings-in table tr td ul li {padding: 3px;}
+.p-form #settings-in table tr td ul li.special-li {border-top: 1px dashed %%color6%%; padding-top: 10px;}
+.p-form #settings-in table tr td span.help {color: %%color7%%; font-size: 0.8em;}
+
+
+.simple-format {margin: 0 auto; border-left: 1px solid %%color6%%; border-top: 1px solid %%color6%%; border-right: 1px solid %%color6%%; width: 205px; _width: 225px; height: 25px; position: relative; right: 284px; top: 1px; =top: 2px; padding: 2px 10px; background: %%color2%%;}
+.simple-format img {cursor: pointer; border: 1px solid %%color6%%; padding: 2px; margin-right: 1px; float: left;}
+.simple-format img:hover {border: 1px solid %%color5%%; background: %%color8%%;}
+.simple-format img.last_img {margin-right: 20px;}
+
+#simple-format-short_story, #simple-format-full_story, #simple-format-text {display: none; position: absolute; margin: -116px 0 0 225px; =margin-right: 300px; z-index: 90; border: 1px solid %%color6%%; background: %%color2%%; width: 170px; padding: 10px; text-align: center;}
+#simple-format-short_story img, #simple-format-full_story img, #simple-format-text img {cursor: pointer; border: 1px solid %%color2%%; padding: 3px;}
+#simple-format-short_story img:hover, #simple-format-full_story img:hover, #simple-format-text img:hover {border: 1px solid %%color6%%; background: #b2bbd0;}
+
+
+
+
+
+#comments-view {font-size: 0.85em; margin: 0 40px; padding: 10px;}
+div.comment {background: %%color2%%; border: 1px solid %%color7%%; border-top: 0px; font-size: 0.9em; line-height: 1.4; padding: 10px; text-decoration: justify;}
+div.comment code {background: %%color9%%; border: 1px solid %%color7%%; display: block; font-size: 0.9em; margin: 5px 20px; overflow: auto; padding: 5px 10px;}
+div#comments-title {background: %%color8%%; border: 1px solid %%color7%%; text-align: center; padding: 10px;}
+div#no-comments {border: 1px solid %%color7%%; color: %%color6%%; padding: 10px; text-align: center;}
+div.comment .info {color: %%color6%%;}
+div.comment .info strong {color: %%color5%%;}
+div.comment:hover {background: %%color10%%;}
+div.comment:hover .links {display: inline; float: right; font-size: 0.9em;}
+
+
+
+
+
+/*
+** ----- PAGES ### Add/Edit post form --------------------------------------------------------------
+*/
+#pages-add-edit {margin: 0; padding: 0;}
+#pages-add-edit fieldset {text-align: center; margin: 0; padding: 0;}
+#pages-add-edit fieldset label#for-title {margin: 0 20px 0 55px;}
+#pages-add-edit textarea {width: 799px; height: 297px; margin: 0; padding: 5px;}
+#pages-add-edit .ta-wrap {margin: 0 0 0 55px; text-align: left;}
+#pages-add-edit p.ta-description {padding: 0 55px;}
+#pages-add-edit .wysiwyg-toggle {cursor: pointer; float: right;}
+#pages-add-edit p.r {margin: 10px 60px 0 0;}
+#pages-add-edit #settings, #pages-add-edit #info {width: 810px;}
+#pages-add-edit #settings-in table {margin: 0 50px; width: 710px;}
+#pages-add-edit #settings-in table tr td.labels {width: 160px;}
+#pages-add-edit #info .example {color: %%color6%%;}
+#pages-add-edit #info p.example {padding: 0; margin: -10px 0 15px 0; text-align: center;}
+#pages-add-edit textarea.integration {height: 65px; margin: 0 auto; width: 700px;}
+
+.page-info {margin: 0 auto; text-align: left;}
+.page-info tr td {height: 30px;}
+.page-info tr td.labels {width: 220px;}
+.page-info tr td.inputs {width: 350px;}
+
+table#pages-list thead tr th#cell-id {width: 40px;}
+table#pages-list thead tr th#cell-page {width: 360px;}
+table#pages-list thead tr th#cell-author {width: 200px;}
+table#pages-list thead tr th#cell-order {width: 30px;}
+table#pages-list thead tr th#cell-visible {width: 30px;}
+table#pages-list thead tr th#cell-date {width: 70px;}
+.page-key {display: inline;}
+
+
+body#reorder_page {background: %%color2%%; text-align: left;height: auto;}
+body#reorder_page p.help {color: %%color6%%; font-size: 0.8em; padding: 5px 10px; text-align: justify;}
+ul#reorder_list {list-style-type: none; margin: 0 auto; padding: 0; width: 330px;}
+ul#reorder_list li {border: 1px solid %%color7%%; color: %%color5%%; font-weight: bold; margin: 1px 0; padding: 5px 10px; position: relative;}
+.reorder_hover {background: %%color10%%;}
+.reorder_drag {background: %%color10%%; border: 1px solid %%color7%%; font-weight: bold; opacity: 0.7; padding: 5px 10px;}
+.reorder_drop {background: %%color9%%; border: 1px solid %%color9%%;}
+.dragHandle {background: transparent url('../../img/icons/draghandle.png') 295px 0px no-repeat; cursor: move; display: block; height: 100%; position: absolute; width: 100%;}
+
+
+
+
+
+
+/*
+** ----- CATEGORIES ### All stuff ------------------------------------------------------------------
+*/
+table.minor-list {width: 400px; float: right; margin: 0 60px 0 0;}
+table.minor-list tr th#minor_id {width: 40px;}
+table.minor-list tr th#minor_name {width: 320px;}
+table.minor-list tr th#minor_count {width: 40px;}
+
+form#category-add-edit {float: left; width: 315px; margin: 0 0 0 60px; text-align: center;}
+form#category-add-edit label {display: block; text-align: left; padding: 0 10px;}
+form#category-add-edit button {margin: 5px 0 0 0;}
+
+
+
+
+
+/*
+** ----- USERS ### Add/Edit user form --------------------------------------------------------------
+*/
+body#avatar {background: %%color2%%; text-align: left; font-size: 0.8em;}
+body#avatar img {float: left; margin-right: 5px;}
+body#avatar input {padding: 3px 6px; width: 180px;}
+body#avatar div {overflow: hidden; padding: 0 0 1px 0;}
+body#avatar .help {color: %%color6%%; font-size: 0.85em;}
+body#avatar #avatar-controls {line-height: 1.5;}
+body#avatar a, .simurl {border-bottom: 1px dotted %%color3%%; color: %%color3%%; cursor: pointer; text-decoration: none;}
+body#avatar a:hover, .simurl:hover {border-bottom: 0;}
+
+#users-add-edit, .profile-form {margin: 0; padding: 0;}
+#users-add-edit fieldset, .profile-form fieldset {text-align: center; margin: 0 auto; margin-top: 15px; padding: 20px 10px; width: 600px; border: 1px solid %%color7%%;}
+#users-add-edit fieldset legend, .profile-form fieldset legend {color: %%color6%%; font-weight: bold;}
+#users-add-edit fieldset label, .profile-form fieldset label, #users-add-edit fieldset span.simlabel, .profile-form fieldset span.simlabel {font-size: 0.95em; color: %%color5%%;}
+#users-add-edit p.r, .profile-form p.r {padding: 0 160px;}
+#users-add-edit #personal-info, #users-add-edit #contact-info, #users-add-edit #other-info {display: none;}
+
+#user-login-info {margin: 60px 0 0 0;}
+
+#profile-old-pass {background: %%color8%%; border: 1px solid %%color7%%; margin: 0 49px 0 17px; padding: 10px;}
+#profile-old-pass label {font-weight: bold;}
+#profile-old-pass span {color: %%color6%%; display: block; font-size: 0.8em; padding: 5px 0 0 0;}
+
+.user-info {text-align: left; margin: 10px 0 0 0;}
+.user-info tr td.labels {width: 220px; padding: 0 0 0 15px;}
+.user-info tr td.inputs {width: 350px; padding: 0 0 10px 0;}
+.user-info tr td.info-text {font-size: 0.9em; width: 350px; padding: 10px 0 10px 0;}
+.user-info tr td.help {width: 590px; color: %%color6%%; font-size: 0.7em; padding: 0 5px 5px 5px;}
+.user-info tr td span.help {color: %%color6%%; font-size: 0.7em;}
+.user-info tr td textarea {font-size: 0.8em; height: 80px; padding: 5px; width: 300px;}
+.user-info tr td iframe {height: 100px; width: 300px;}
+
+
+
+
+table#users-list {margin: 0;}
+table#users-list thead tr th#cell-username {width: 250px;}
+table#users-list thead tr th#cell-email {width: 250px;}
+table#users-list thead tr th#cell-group {width: 200px;}
+table#users-list thead tr th#cell-posts, table#users-list tbody tr td.cell-posts {width: 50px;}
+
+
+
+
+
+/*
+** ----- GROUPS ### All stuff ----------------------------------------------------------------------
+*/
+table#groups-list {width: 580px; margin: 0 auto;}
+table#groups-list thead tr th {cursor: default;}
+table#groups-list thead tr th:hover {background: %%color6%%; cursor: default;}
+table#groups-list tr th#group_name {width: 300px;}
+table#groups-list tr th.permissions {width: 30px; padding: 10px 0; text-align: center;}
+
+ul#permissions-help {background: %%color8%%; border: 1px solid %%color7%%; color: %%color5%%; font-size: 0.75em; list-style-type: none; margin: 20px 20px 0 20px; padding: 10px 15px; text-align: left;}
+ul#permissions-help li {display: block; margin: 5px 0;}
+
+
+
+form#group-add-edit {width: 790px; margin: 0 auto;}
+form#group-add-edit p {clear: both; padding: 20px 0 0 0; text-align: center;}
+form#group-add-edit fieldset {border: 1px solid %%color7%%; float: left; height: 115px; margin: 10px; padding: 10px; width: 220px;}
+form#group-add-edit fieldset#group-name {width: 745px; height: auto; text-align: center;}
+form#group-add-edit fieldset#group-name label {font-size: 0.85; color: %%color5%%; font-weight: bold;}
+form#group-add-edit fieldset#group-name input {margin: 0 0 0 10px;}
+form#group-add-edit fieldset legend {border: 1px solid %%color7%%; color: %%color5%%; font-weight: bold; font-size: 0.85em; padding: 5px 10px;}
+form#group-add-edit fieldset:hover, form#group-add-edit fieldset:hover legend {border: 1px solid %%color6%%; background: %%color2%%;}
+form#group-add-edit fieldset#group-name:hover {border: 1px solid %%color7%%; background: transparent;}
+
+ul.permissions-list {list-style-type: none; font-size: 0.75em; text-align: left; margin: 0; padding: 0;}
+ul.permissions-list li {display: block; margin: 5px 0;}
+
+
+
+
+
+/*
+** ----- COMMENTS ### Edit comment form ------------------------------------------------------------
+*/
+#c-count {color: %%color5%%; float: left; font-size: 0.8em; position: relative; top: 20px; width: 400px;}
+table#comments-list {margin: 0;}
+table#comments-list thead tr th#cell-author {width: 165px;}
+table#comments-list thead tr th#cell-text {width: 500px;}
+table#comments-list thead tr th#cell-post {width: 180px;}
+table#comments-list tbody tr td .checkbox {float: right;}
+
+table#comments-list tr td span.status_0 {color: #ff0000;} /* red */
+table#comments-list tr td span.status_1 {color: #008000;} /* green */
+table#comments-list tr td span.status_2 {color: #ffa500;} /* orange */
+table#comments-list tr td span.status_3 {color: darkred;} /* darkred */
+table#comments-list tr td span.status_4 {color: darkred;} /* darkred */
+table#comments-list tr td span.status_5 {color: #ff0000;} /* red */
+
+table#comments-list tr:hover p.process-links {display: block; font-size: 0.85em; margin: 0; padding: 5px 0;}
+table#comments-list tr td a.approve, table#comments-list tr td a.restore {color: #008000;}
+table#comments-list tr td a.reject, table#comments-list tr td a.delete {color: #ff0000;}
+
+table#comments-list tbody tr td {vertical-align: top;}
+div.comment-text {
+  background: %%color9%%;
+  border: 1px solid %%color8%%;
+  font-size: 0.85em;
+  height: 60px;
+  line-height: 1.4;
+  margin: 0 0 5px 0;
+  overflow: auto;
+  padding: 2px 5px;
+  text-align: justify;
+  width: 520px;
+}
+
+
+.bulk-actions {padding: 5px 0 0 0; text-align: left; z-index: 100;}
+
+form#comment-edit {
+  margin: 0 auto;
+  width: 500px;
+}
+form#comment-edit table tr td.labels {width: 140px;}
+form#comment-edit textarea {
+  height: 100px;
+  padding: 5px;
+  width: 447px;
+  margin: 0;
+}
+form#comment-edit p.r {padding: 0 30px 0 0; margin: 2px 0 0 0;}
+form#comment-edit ul#comment-info {
+  background: %%color9%%;
+  border: 1px solid %%color6%%;
+  color: %%color5%%;
+  font-size: 0.9em;
+  list-style-type: none;
+  margin: 0 0 0 13px;
+  padding: 10px 20px;
+  width: 417px;
+}
+form#comment-edit ul#comment-info li {padding: 3px 0;}
+
+
+form#comment-reply {text-align: center; margin: 80px 0 0 0;}
+form#comment-reply textarea {
+  height: 100px;
+  padding: 5px;
+  width: 400px;
+}
+form#comment-reply p.ta-description {padding: 0 0 0 100px;}
+#mn-comment-buttons {margin: 5px 0 0 0; text-align: center;}
+#mn-comment-buttons img {cursor: pointer; padding: 3px; border: 1px solid %%color7%%; margin-left: -4px;}
+#mn-comment-buttons img:hover {background: %%color7%%;}
+
+
+
+
+/*
+** ----- ITEMS ### Delete item form ----------------------------------------------------------------
+*/
+form.item-delete {text-align: center; padding: 90px 0 0 0;}
+form#post-delete, form#comment-delete {padding: 50px 0 0 0;}
+form.item-delete div.preview {text-align: justify; font-size: 0.75em; background: %%color9%%; border: 1px solid %%color6%%; padding: 5px 10px; margin: 5px; overflow: auto; height: 100px;}
+form.item-delete .warn {color: #dc143c; font-weight: bold; display: block;}
+form.item-delete button {margin: 0 auto; margin-top: 15px; display: block;}
+form.item-delete em {color: %%color6%%; font-size: 0.9em; padding: 5px 0 0 0; display: block;}
+form.item-delete p.c img {border: 2px solid %%color7%%; max-width: 200px; max-height: 200px;}
+form.item-delete div.preview em {display: inline;}
+
+
+
+
+
+
+table#files-list {margin: 0;}
+table#files-list thead tr th#cell-checkbox {width: 20px; padding: 0;}
+table#files-list thead tr th#cell-icon {width: 20px; padding: 0;}
+table#files-list thead tr th#cell-name {width: 370px;}
+table#files-list thead tr th#cell-size {width: 110px;}
+table#files-list thead tr th#cell-dir {width: 80px;}
+table#files-list thead tr th#cell-uploader {width: 140px;}
+table#files-list thead tr th#cell-date {width: 40px;}
+table#files-list tr td.cell-icon {text-align: center; width: 20px; vertical-align: top;}
+table#files-list tr.highlight td {background: #d1fdc7 !important;}
+table#files-list tr td input.file-link {border: 1px solid %%color7%%; font-size: 0.7em; height: 10px; margin: 0; padding: 0; width: 100px;}
+table#files-list tr td input.file-link:focus {border: 1px solid %%color7%%; box-shadow: %%color10%% 0 0 0 !important; -webkit-box-shadow: %%color10%% 0 0 0 !important; -moz-box-shadow: %%color10%% 0 0 0 !important;}
+
+
+form#uploadify-form {margin: 0; padding: 0;}
+.uploadify-button {
+	background: %%color9%%;
+	border: 1px solid %%color7%%;
+	color: %%color5%%;
+	cursor: pointer;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding: 2px 5px 2px 24px;
+	text-decoration: none;
+}
+#upload-info {color: %%color7%%; font-size: 0.9em; font-style: italic; height: 30px;}
+#upload-info .complete {color: #259E00;}
+#upload-btn {clear: both; position: relative; top: 10px;}
+
+
+form#quick-upload {color: %%color6%%; margin: 0 auto; text-align: left; text-shadow: #fff 1px -1px 1px;}
+form#quick-upload label {color: %%color5%%;}
+form#quick-upload p {font-size:  0.8em; margin: 0; padding: 0;}
+
+form#image-edit {font-size: 0.9em; padding: 10px 0 0 0; text-align: center;}
+form#image-edit label.required {color: %%color1%%; font-weight: bold;}
+form#image-edit input#filename {width: 260px;}
+form#image-edit #galleries {background: %%color9%%; border: 1px solid %%color7%%; margin: 0 auto; margin-top: 10px; max-height: 100px; overflow: auto; padding: 10px; text-align: left; width: 500px;}
+form#image-edit #galleries ul.galleries {list-style-type: none; margin: 5px 0 0 0; max-height: 400px; overflow: auto; padding: 0;}
+form#image-edit #galleries ul.galleries li {display: block; float: left; font-size: 0.75em; padding: 3px 0; width: 220px;}
+form#image-edit span.trivial {color: %%color6%%;}
+
+form#image-edit table {margin: 0 auto;}
+form#image-edit table tr td.inputs {text-align: left;}
+form#image-edit table tr td.labels {padding: 0 10px 0 0; text-align: right;}
+form#image-edit table tr td.thumb {padding: 15px 10px; vertical-align: top;}
+form#image-edit table tr td.thumb img {border: 2px solid %%color6%%;}
+form#image-edit table tr td textarea {padding: 5px; width: 300px;}
+
+#gallery {padding: 0 0 0 10px;}
+#gallery #gallery-filter {font-size: 0.8em; padding: 5px 0; text-align: right;}
+#gallery #gallery-filter select {border-color: %%color8%%;}
+#gallery .gal-item {background: transparent; border: 1px solid %%color8%%; float: left; font-size: 0.65em; height: 150px; margin: 5px 5px 0 0; overflow: hidden; padding: 10px 5px 0 5px; text-align: center; width: 105px;}
+#gallery .gal-item.uploaded {border: 1px solid %%color7%%; box-shadow: 0px 0px 4px %%color8%%;}
+#gallery .gal-item p {padding-bottom: 0; margin-bottom: 0;}
+#gallery .gal-item:hover {border: 1px solid %%color3%%; box-shadow: 0px 0px 4px %%color3%%; color: %%color3%%; cursor: pointer;}
+#gallery .gal-item img {border: 1px solid %%color8%%; max-height: 90px; width: 92%;}
+#gallery .gal-item:hover img {border-color: %%color7%%;}
+#gallery .gal-item .trivial {color: %%color8%%;}
+.simicon {background: transparent url('../../stuff/img/icons/file-uni-big.png') center center no-repeat; color: %%color8%%; display: inline-block; font-size: 1.7em; height: 60px; padding-top: 30px; text-align: center; width: 90px;}
+.f_doc, .f_docx {color: lightblue;}
+.f_xls, .f_xlsx, .f_csv {color: lightgreen;}
+.f_pdf {color: lightpink;}
+.f_mp4, .f_avi, .f_3gp, .f_asf, .f_asx, .f_mov, .f_mpeg, .f_mpg, .f_wmv, .f_wmx {color: sandybrown;}
+.f_aac, .f_m3u, .f_mid, .f_mp3, .f_wav {color: gold;}
+
+
+
+#tools {margin: 0 auto; width: 685px;}
+.tool {background: %%color2%%; border: 1px solid %%color7%%; float: left; height: 100px; margin: 10px; padding: 10px; width: 300px;}
+.tool h3 {margin: 0; padding: 0; display: block;}
+.tool h3 a, .tool h3 a:hover span {text-decoration: none;}
+.tool h3 a span {text-decoration: underline;}
+.tool p {color: %%color6%%; font-size: 0.8em;}
+
+
+table#xfields-list {float: right; margin-top: 20px; width: 540px;}
+table#xfields-list tr th#xfield-icon {width: 16px;}
+table#xfields-list tr th#xfield-name {width: 224px;}
+table#xfields-list tr th#xfield-var {width: 200px;}
+table#xfields-list tr th#xfield-section {width: 100px;}
+
+form#xfields-add-edit {font-size: 0.9em; margin: 0 auto; width: 360px; float: left;}
+form#xfields-add-edit textarea {height: 80px; padding: 5px; width: 300px;}
+form#xfields-add-edit label.block {display: block; padding: 10px 0 0 0;}
+form#xfields-add-edit label.select {display: block; padding: 2px 0 0 40px;}
+form#xfields-add-edit label.hide {display: none;}
+form#xfields-add-edit .cancel {font-size: 0.8em; padding: 0 0 0 10px;}
+form#xfields-add-edit input[disabled="disabled"], form#xfields-add-edit select[disabled="disabled"] {cursor: help;}
+
+
+table#backup-table {width: 700px;}
+table#backup-table tr th#file_name {width: 450px;}
+table#backup-table tr th#file_size {width: 100px;}
+table#backup-table tr th#file_date {width: 150px;}
+
+.disclaimer {
+  color: %%color6%%;
+  font-size: 0.9em;
+  margin: 0 100px;
+  padding: 10px 0 0 0;
+  text-align: justify;
+}
+
+
+
+form#banned-ips {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+}
+form#banned-ips textarea {
+  border: 1px solid %%color6%%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 5px;
+  width: 300px;
+}
+form#banned-ips p.help {
+  color: %%color6%%;
+  font-size: 0.8em;
+}
+
+
+
+
+table#theme-config {width: 500px; margin: 0 auto;}
+.colorpreview {border: 1px solid %%color6%%; display: inline-block; width: 16px; height: 16px; position: relative; top: 4px;}
+
+table.config-edit {margin: 0 60px; border-collapse: collapse; border-bottom: 1px solid %%color7%%; width: 800px;}
+table.config-edit tr td {border-top: 1px solid %%color7%%; padding: 5px 10px 0 10px;}
+table.config-edit tr td.labels {width: 300px;}
+table.config-edit tr td label {color: %%color1%%; font-size: 0.9em; font-weight: bold;}
+table.config-edit tr td label.custom {font-weight: normal;}
+table.config-edit tr td.labels p.avatar-help {margin: 0; padding: 0 0 25px 0;}
+table.config-edit tr td input.extra {width: 270px;}
+table.config-edit tr td select.extra {width: 282px;}
+table.config-edit tr td input.secondrb {margin-left: 20px;}
+table.config-edit tr td input, table.config-edit tr td select {font-size: 0.9em;}
+table.config-edit tr.config-help td, table.config-edit tr td .help {border: 0; color: %%color6%%; font-size: 0.7em; padding: 0 10px 20px 5px;}
+table.config-edit tr td img#auto-url {cursor: pointer;}
+#bb-buttons-viewer {font-size: 0.8em;}
+table.config-edit tr td #bb-buttons {clear: both; padding: 5px 0;}
+table.config-edit tr td #bb-buttons input {margin: 0;}
+table.config-edit tr td #bb-buttons label {padding: 0 7px 0 2px;}
+table.config-edit tr td #bb-buttons label img {background: %%color2%%; border: 1px solid %%color7%%; cursor: pointer; padding: 2px;}
+
+.help-text {background: %%color8%%; border: 1px solid %%color7%%; font-size: 0.8em; margin: 0 auto; padding: 10px; text-align: left; width: 628px;}
+.sim-select {
+  background: %%color2%%;
+  height: 80px;
+  margin: 5px 0 10px 0;
+  overflow: auto;
+  padding: 3px 0 3px 3px;
+  width: 250px;
+}
+
+.t-nav {padding: 0 0 15px 0;}
+.t-nav ul {
+  background: %%color2%%;
+  border: 1px solid %%color7%%;
+  list-style-type: none;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  width: 704px;
+}
+.t-nav li {
+  border-right: 1px solid %%color7%%;
+  color: %%color5%%;
+  cursor: pointer;
+  float: left;
+  font-size: 0.8em;
+  height: 24px;
+  margin: 0;
+  padding: 9px 10px 0 10px;
+  text-align: center;
+  text-decoration: underline;
+  width: 120px;
+}
+.t-nav li.last {border: 0;}
+.t-nav li:hover {
+  text-decoration: none;
+}
+.t-nav li.active {
+  background: %%color9%%;
+  color: %%color6%%;
+  cursor: default;
+  text-decoration: none;
+}
+.t-content {
+  clear: both;
+}
+
+
+form#integration {text-align: center;}
+form#integration fieldset {border: 1px solid %%color7%%; margin: 20px 50px 50px 50px;}
+form#integration fieldset legend {border: 1px solid %%color7%%; color: %%color5%%; font-size: 0.9em; font-weight: bold; padding: 5px 10px;}
+form#integration fieldset .help {color: %%color6%%; font-size: 0.8em; text-align: justify;}
+form#integration textarea {border: 1px solid %%color7%%; height: 80px; margin: 0 auto; padding: 5px; text-align: justify; width: 700px;}
+form#integration textarea#generate {height: 130px;}
+form#integration textarea#gal {height: 100px; width: 450px;}
+
+
+
+
+table#templates-list thead tr th#tmpl_name {width: 350px;}
+table#templates-list thead tr th#tmpl_file {width: 300px;}
+
+#tmpl-link {position: relative; left: 800px; text-decoration: none; top: -35px;}
+#tmpl-link img {display: none;}
+#tmpl-link span {color: %%color5%%; font-size: 0.9em; font-weight: bold; text-decoration: underline;}
+#tmpl-link:hover span {text-decoration: none;}
+form.tmpl-add fieldset {text-align: center;}
+form.tmpl-add fieldset table {margin: 0 auto;}
+form.tmpl-add fieldset table tr td {text-align: left;}
+
+
+#tmpl-edit {text-align: center;}
+#tmpl-edit textarea {height: 200px; padding: 5px; width: 820px;}
+
+.tmpl-help {background: %%color9%%; border: 1px solid %%color7%%; font-size: 0.8em; margin: 0 44px 5px 44px; padding: 10px; text-align: left;}
+ul.tmpl-variables, ul.tmpl-variables ul {list-style-type: none; margin: 0; padding: 0 0 0 15px;}
+ul.tmpl-variables li, ul.tmpl-variables ul li {padding: 1px 0;}
+ul.tmpl-variables li span.example {color: %%color6%%;}
+ul.tmpl-variables li span.variable {font-weight: bold; cursor: pointer;}
+ul.tmpl-variables ul li span.variable {color: %%color5%%;}
+ul.tmpl-variables span.variable:hover {color: %%color3%%;}
+ul.tmpl-variables ul {margin: 5px 0;}
+
+
+
+
+/*
+** ----- COMMON Classes ----------------------------------------------------------------------------
+*/
+.vat {vertical-align: top; padding: 7px 0 0 15px;}
+.vatt {vertical-align: top; padding: 5px 0 0 0;}
+.required {color: darkred; font-size: 0.9em;}
+.disabled {background: %%color9%%; color: %%color5%%;}
+.rel-links {color: %%color6%%; float: right; padding: 15px 0 0 0;}
+.rel-links a {text-decoration: none; border-bottom: 1px solid;}
+.rel-links img {display: none;}
+.rel-links a:hover {border: 0;}
+
+.wtooltip {
+  background: %%color6%%;
+  border: 1px solid %%color6%%;
+  color: white;
+  font-size: 0.7em;
+  margin: 5px 0 0 0;
+  padding: 5px 10px;
+  text-align: justify;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus, form#integration textarea:focus {
+	border-color: %%color5%%;
+	outline: none;
+}

@@ -1,0 +1,597 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Peekaboo - Site Template Documentation (v1.0)</title>
+	
+	<meta name="description" content="Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please post your question in this forum. 
+Please send a request through my profile page. You'll get an access within 24 hours (weekdays) once I verified your purchase.
+Thank you!">
+	<meta name="author" content="population2">
+	<meta name="copyright" content="population2">
+	<meta name="generator" content="Documenter v1.4 http://rxa.li/documenter">
+	<meta name="date" content="2011-08-19T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	<script src="js/jquery.1.5.1.js"></script>
+	<script src="js/cufon.js"></script><script src="js/Museo_Sans.font.js"></script>
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#E8F3F8;color:#383838;}
+		::-moz-selection{background:#DBE6EC;color:#111111;}
+		::selection{background:#DBE6EC;color:#111111;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_14.png);}
+		a{color:#81A8B8;}
+		hr{border-top:1px solid #D7E1E6;border-bottom:1px solid #EFFAFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#C2CBCE;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #DBE5E8;-moz-text-shadow:1px 1px 0px #DBE5E8;text-shadow:1px 1px 0px #DBE5E8;}
+		#documenter_sidebar ol{border-top:1px solid #B4BCBF;}
+		#documenter_sidebar ol a{border-top:1px solid #DBE5E8;border-bottom:1px solid #B4BCBF;color:#222222;}
+		#documenter_sidebar ol a:hover{background:#DBE6EC;color:#111111;border-top:1px solid #DBE6EC;}
+		#documenter_sidebar ol a.current{background:#DBE6EC;color:#111111;border-top:1px solid #DBE6EC;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#html_structure">HTML Structure</a></li>
+			<li><a href="#css_files_and_structure">CSS Files and Structure</a></li>
+			<li><a href="#color_schemes">Color Schemes</a></li>
+			<li><a href="#slider">Slider</a></li>
+			<li><a href="#circular_thumbnails">Circular Thumbnails</a></li>
+			<li><a href="#maps">Maps</a></li>
+			<li><a href="#colorbox">Colorbox</a></li>
+			<li><a href="#twitter_feed">Twitter Feed</a></li>
+			<li><a href="#contact_form">Contact Form</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#psd_files">PSD Files</a></li>
+			<li><a href="#sources_and_credits">Sources and Credits</a></li>
+			<li><a href="#epilogue">Epilogue</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright population2 2011<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.4</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Peekaboo</h1><h2>Site Template Documentation (v1.0)</h2><hr><ul><li>Created: 04/08/2011</li><li>latest Update: 08/19/2011</li><li>By: population2</li><li><a href="http://themeforest.net/user/population2">themeforest.net/user/population2</a></li><li>Email: <a href="mailto:&#112;&#111;&#112;&#117;&#108;&#97;&#116;&#105;&#111;&#110;&#116;&#119;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#112;&#111;&#112;&#117;&#108;&#97;&#116;&#105;&#111;&#110;&#116;&#119;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li></ul><p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please post your question in <a href="http://support.population-2.com/" target="_blank">this forum</a>. 
+Please send a request through my profile page. You'll get an access within 24 hours (weekdays) once I verified your purchase.
+Thank you!</p></section><section id="html_structure">
+	<h3>HTML Structure</h3><hr class="notop">
+<p>
+	This theme is a fixed layout with two columns. All of the information within the main content area is nested within a div with an id of <strong>main</strong>. The sidebar&#39;s&nbsp; content is within a div with an id of &quot;sidebar&quot;. The general template structure is the same throughout the template except the index page. Here is the general structure of the typical page:</p>
+<p>
+	<img alt="" src="http://bit.ly/ewoyjk" style="width: 600px; height: 614px;"></p>
+<p>
+	If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+<pre class="brush: css">
+#footer {color: #someColor;} 
+</pre>
+<p>
+	If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn&#39;t a similar style that has more weight.</p>
+<p>
+	I.E.</p>
+<pre class="brush: css">
+#container #footer {color: #someColor;}
+</pre>
+<p>
+	So, to ensure that your new styles are applied, make sure that they carry enough &quot;weight&quot; and that there isn&#39;t a style lower in the CSS file that is being applied after yours.</p>
+<p class="info">
+	The easiest way to find certain elements is by using Firebug. You can download it <a href="http://getfirebug.com/" target="_blank">here</a> and watch the introduction video <a href="http://getfirebug.com/video/Intro2FB.htm" target="_blank">here</a>.</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="css_files_and_structure">
+	<h3>CSS Files and Structure</h3><hr class="notop">
+<p>	There are four css files in this theme.</p>
+<p>	&nbsp;</p>
+<h4>
+	1. style.css</h4>
+<p>	This file contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file. The file is separated into sections using:</p>
+<pre class="brush: css">
+/*------------------------------------------------------------------
+1.&nbsp;&nbsp; &nbsp;GLOBAL
+------------------------------------------------------------------*/
+/*Basic elements*/
+/*Structure*/
+
+/*------------------------------------------------------------------
+2.&nbsp;&nbsp; &nbsp;HEADER
+------------------------------------------------------------------*/
+/*Navigation*/
+
+/*------------------------------------------------------------------
+3.&nbsp;&nbsp; &nbsp;HOMEPAGE
+------------------------------------------------------------------*/
+/*The Nivo Slider Custom Styles*/
+/*Quick Menu*/
+/*Content*/
+
+/*------------------------------------------------------------------
+4.&nbsp;&nbsp; &nbsp;SIDEBAR
+------------------------------------------------------------------*/
+/*Sidebar*/
+
+/*------------------------------------------------------------------
+5.&nbsp;&nbsp; &nbsp;FOOTER
+------------------------------------------------------------------*/
+/* Map */
+/* Twitter feed */
+
+/*------------------------------------------------------------------
+6.&nbsp;&nbsp; &nbsp;SECTIONS
+------------------------------------------------------------------*/
+/*Common*/
+/*Blog Page*/
+/*About Page*/
+/*Contact Page*/
+</pre>
+<p>	If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+<p>	&nbsp;</p>
+<h4>
+	2. style-alpha.css, style-bravo.css, style-charlie.css, and style-delta.css</h4>
+<p>	These files contains the alternate styles of the theme.</p>
+<p>	&nbsp;</p>
+<h4>
+	3. colorbox.css</h4>
+<p>	This contains the styling for the colorbox plugin. No need to modify this file.</p>
+<p>	&nbsp;</p>
+<h4>
+	4. nivo-slider.css</h4>
+<p>	This contains the styling for the Nivo Slider plugin. No need to modify this file.</p>
+</section>
+<section id="color_schemes">
+	<h3>Color Schemes</h3><hr class="notop">
+<h4>
+	<strong><strong>Styles</strong></strong></h4>
+<p>	There are 5 styles included in this theme:</p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 750px; height: 336px;">
+	<tbody>
+		<tr>
+			<td>
+				<p>					<img alt="" src="assets/images/image_8.jpg" style="width: 220px; height: 220px;"></p>
+			</td>
+			<td>
+				<p>					<img alt="" src="assets/images/image_4.jpg" style="width: 220px; height: 220px;"></p>
+			</td>
+			<td>
+				<p>					<img alt="" src="assets/images/image_5.jpg" style="width: 220px; height: 220px;"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>					<strong>Style 1 - default.css</strong></p>
+			</td>
+			<td>
+				<p>					Style 2 - style-alpha.css</p>
+			</td>
+			<td>
+				<p>					Style 3 - style-bravo.css</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>					<img alt="" src="assets/images/image_6.jpg" style="width: 220px; height: 220px;"></p>
+			</td>
+			<td>
+				<p>					<img alt="" src="assets/images/image_7.jpg" style="width: 220px; height: 220px;"></p>
+			</td>
+			<td>
+				<p>					&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>					Style 4 - style-charlie.css</p>
+			</td>
+			<td>
+				<p>					Style 5 - style-delta.css</p>
+			</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<p>	Replace the default.css in the head tag with the alternate css files to use the other style.</p>
+<pre class="brush: html">
+<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/default.css&quot; /&gt; </code>
+</pre>
+<p>	&nbsp;</p>
+<h4>
+	<strong><strong>Background</strong></strong></h4>
+<p>	There are 3 background included in this theme. You can change the background by changing the path to the background images in p2.js.</p>
+<pre class="brush: js">
+&nbsp;&nbsp;&nbsp; // Full page background
+&nbsp;&nbsp; &nbsp;$.supersized({
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; //Background image
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; slides&nbsp;&nbsp; &nbsp;:&nbsp; [ { image : &#39;img/bg1.jpg&#39; } ]&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;});</pre>
+<table border="0" cellpadding="0" cellspacing="0" style="width: 700px;">
+	<tbody>
+		<tr>
+			<td>
+				<p>					<img alt="" src="assets/images/image_1.jpg" style="width: 220px; height: 187px;"></p>
+			</td>
+			<td>
+				<p>					<img alt="" src="assets/images/image_2.jpg" style="width: 220px; height: 187px;"></p>
+			</td>
+			<td>
+				<p>					<img alt="" src="assets/images/image_3.jpg" style="width: 220px; height: 187px;"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<strong>Background 1</strong></td>
+			<td>
+				<strong>Background 2</strong></td>
+			<td>
+				<strong>Background 3</strong></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>This theme uses <a href="http://www.buildinternet.com/project/supersized/" target="_blank">Supersized</a> core plugin for the background. It will resizes image to fill browser window while maintaining image dimension ratio. This template only use the core version of the plugin, meaning it only has the fullscreen background option ( no slideshow, flickr integration, and navigation).</p>
+</section>
+<section id="slider">
+	<h3>Slider</h3><hr class="notop">
+<p>This theme use Nivo slider plugin for the slider area. You can add as much slides as you like. The Images for the featured area should be 680px wide and 320px high. You can add, edit and delete slide items. this is the slide structure:</p>
+<pre class="brush: html">
+&lt;div id=&quot;slider-wrapper&quot; class=&quot;left&quot;&gt;
+    &lt;div id=&quot;slider&quot; class=&quot;nivoSlider&quot;&gt;
+        &lt;a href=&quot;image url&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;image source url&quot;  /&gt;&lt;/a&gt;
+        &lt;a href=&quot;image url&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;image source url&quot; title=&quot;This is slide image 2&quot; /&gt;&lt;/a&gt;
+        &lt;a href=&quot;image url&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;image source url&quot; /&gt;&lt;/a&gt;
+        &lt;img src=&quot;image source url&quot; alt=&quot;&quot; title=&quot;#htmlcaption&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;htmlcaption&quot; class=&quot;nivo-html-caption&quot;&gt; Caption with &lt;a href=&quot;#&quot;&gt;a link&lt;/a&gt;. &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>If you want a specific slide image to link to somewhere simply wrap it with an anchor tag like this:</p>
+
+<pre class="brush: html">
+&lt;a href=&quot;image url&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;image source url&quot;  /&gt;&lt;/a&gt;
+</pre>
+<p>If you want a specific slide image to have a simple caption (withouth link), add the caption in the title attribute like this:</p>
+<pre class="brush: html">
+&lt;a href=&quot;image url&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;image source url&quot; title=&quot;This is slide image 2&quot; /&gt;&lt;/a&gt;
+</pre>
+<p>If you want a specific slide image to have a caption with link, add the caption in the title attribute like this:</p>
+<pre class="brush: html">
+&lt;img src=&quot;image source url&quot; alt=&quot;&quot; title=&quot;#htmlcaption&quot; /&gt;
+</pre>
+<p>And add the caption in this div:</p>
+<pre class="brush: html">
+&lt;div id=&quot;htmlcaption&quot; class=&quot;nivo-html-caption&quot;&gt; Caption with &lt;a href=&quot;#&quot;&gt;a link&lt;/a&gt;. &lt;/div&gt;
+</pre>
+
+<p>The slider is initiated in the end of index.html file. You can modify the transition effect by changing the effect parameters:</p>
+<pre class="brush: js">
+
+    $(window).load(function() {
+        $(&#39;#slider&#39;).nivoSlider({
+            effect: &#39;fade&#39;,        
+        });
+    });
+
+</pre>
+
+<p>	The effect parameter can be any of the following:</p>
+<ul>	<li>		sliceDown</li>
+	<li>		sliceDownLeft</li>
+	<li>		sliceUp</li>
+	<li>		sliceUpLeft</li>
+	<li>		sliceUpDown</li>
+	<li>		sliceUpDownLeft</li>
+	<li>		fold</li>
+	<li>		fade</li>
+	<li>		random</li>
+	<li>		slideInRight</li>
+	<li>		slideInLeft</li>
+	<li>		boxRandom</li>
+	<li>		boxRain</li>
+	<li>		boxRainReverse</li>
+	<li>		boxRainGrow</li>
+	<li>		boxRainGrowReverse</li>
+</ul>
+<p>	For full parameters and options, pelase refer to the Nivo <a href="http://nivo.dev7studios.com/#usage" target="_blank">documentation</a>.</p>
+</section>
+<section id="circular_thumbnails">
+	<h3>Circular Thumbnails</h3><hr class="notop">
+<p>	This theme using circular thumbnails on the index page. The circular thumbnails are defined in 2 sizes. 100px x 100px and 60px x 60px.</p>
+
+<h5>
+	100 px x 100 px thumbnail</h5>
+<pre class="brush: html">
+<code>&lt;div style=&quot;background: url(&quot;img/stock/100x100_thumbnail_1.jpg&quot;) repeat scroll 0% 0% transparent;&quot; class=&quot;thumbnail_100_right&quot;&gt;&lt;/div&gt;</code>
+</pre>
+
+<h5>
+	60 px x 60 px thumbnail</h5>
+<pre class="brush: html">
+<code>&lt;div style=&quot;background: url(&quot;img/stock/60x60_thumbnail_5.jpg&quot;) repeat scroll 0% 0% transparent;&quot; class=&quot;thumbnail_60_left&quot;&gt;&lt;/div&gt;</code>
+</pre>
+
+<p class="info">
+	<strong>Usage:</strong> Change the background source accordingly. The thumbnail image is embeded in the background image of a div element. That way you can easily use a common rectangular thumbnail image. No need to create the circular thumbnails.</p>
+<p>	<img alt="" src="assets/images/image_16.jpg" style="width: 300px; height: 348px;"></p>
+
+</section>
+<section id="maps">
+	<h3>Maps</h3><hr class="notop">
+<p>	This theme has Google Maps in the contact page and in the footer area of every pages.</p>
+<h4>
+	1. Footer area</h4>
+<p>	The map will appear in a modal window when user click the &quot;Map It&quot; button.</p>
+<p>	<img alt="" src="assets/images/image_15.jpg" style="width: 600px; height: 501px;"></p>
+<p>Follow these steps to set your location:</p>
+<ol>
+	<li>Find your location on <a href="http://maps.google.com/" target="_blank">Google Maps</a></li>
+<li>Click the link and get the email or IM code.<br/>
+<img alt="" src="assets/images/image_12.jpg" style="width: 407px; height: 128px;">
+</li>
+<li>Open p2.js and find this code:<br/>
+<pre class="brush: js">
+// Google Map
+$("#modalmap").colorbox({iframe:true, innerWidth:"50%", innerHeight:"50%", href:" " });
+</pre>
+</li>
+
+<li>Paste the previous code you get from Google Map to the href.</li>
+<li>Add <code>&iwloc=A&output=embed</code> to the end of the Google Map code.<br/>
+It looks like this:<br/>
+<pre class="brush: js">
+// Google Map
+$("#modalmap").colorbox({iframe:true, innerWidth:"50%", innerHeight:"50%", href:"[..google-map-code..]&iwloc=A&output=embed" });
+});
+</li>
+
+</ol>
+
+<h4>
+	2. Contact page</h4>
+<p>	I use Google Map static API in the contact page. Follow these steps to set your location:</p>
+<ol>
+	<li>		Find your location on <a href="http://maps.google.com/" target="_blank">Google Maps</a></li>
+	<li>		Right click at the exact location of your address and click <strong>What&#39;s Here?</strong><br>
+		<img alt="" src="assets/images/image_13.jpg" style="width: 287px; height: 238px;"></li>
+	<li>		Get the coordinates.<br>
+		<img alt="" src="assets/images/image_11.jpg" style="width: 500px; height: 124px;"></li>
+	<li>		Copy this code and replace the X and Y with the new coordinates&nbsp;<br>
+		<pre class="brush: html">
+&lt;a href=&quot;http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=X,Y
+&amp;aq=1&amp;sll=X,Y&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://maps.google.com/maps/api/
+staticmap?center=X,Y&amp;zoom=15&amp;size=310x240&amp;maptype=roadmap&amp;markers=color:
+blue|label:S|X,Y&amp;sensor=false&quot; alt=&quot;map&quot; class=&quot;shadow&quot; /&gt;&lt;/a&gt;
+</pre>
+	</li>
+</ol>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="colorbox">
+	<h3>Colorbox</h3><hr class="notop">
+<p>	Colorbox jQuery is a plugin to show photo and video in a modal window.</p>
+<p>	This theme has 5 effects pre configured in the p2.js.</p>
+<h4>
+	1. Video</h4>
+<pre class="brush: js">
+$(&quot;.video_modal&quot;).colorbox({iframe:true, innerWidth:&quot;50%&quot;, innerHeight:&quot;50%&quot;});
+</pre>
+<p>	It will show the videos at 50% size of your screen</p>
+<p class="info">
+	Usage: Add &quot;video_modal&quot; class to the anchor tag.</p>
+<pre class="brush: html">
+<a class="video_modal" href="http://player.vimeo.com/video/18879649">&lt;a href=&quot;http://player.vimeo.com/video/18879649&quot; class=&quot;video_modal&quot;&gt;&lt;img src=&quot;img/stock/270x204_video_thumb_6.jpg&quot; alt=&quot;Sorry Film Not Ready&quot;/&gt;&lt;/a&gt;</a>
+</pre>
+<br>
+<h4>
+	2. Photo - Elastic transition</h4>
+<pre class="brush: js">
+$(&quot;a[rel=&#39;example1&#39;]&quot;).colorbox();</pre>
+<p>	It will show the photo at the default Colorbox setting which is elastic transition.</p>
+<p class="info">
+	Usage: Add &quot;example1&quot; to the rel attribute of the anchor tag.</p>
+<pre class="brush: html">
+&lt;a href=&quot;img/stock/600x400_gallery_placeholder_1.jpg&quot; rel=&quot;example1&quot; &gt;&lt;img src=&quot;img/stock/270x204_gallery_placeholder_1.jpg&quot; alt=&quot;placeholder&quot;/&gt;&lt;/a&gt;
+</pre>
+<br>
+<h4>
+	3. Photo - Fade transition</h4>
+<pre class="brush: js">
+$(&quot;a[rel=&#39;example2&#39;]&quot;).colorbox({transition:&quot;fade&quot;});</pre>
+<p class="info">
+	It will show the photo with fade transition.</p>
+<p>	Usage: Add &quot;example1&quot; to the rel attribute of the anchor tag.</p>
+<pre class="brush: html">
+&lt;a href=&quot;img/stock/600x400_gallery_placeholder_1.jpg&quot; rel=&quot;example2&quot; &gt;&lt;img src=&quot;img/stock/270x204_gallery_placeholder_1.jpg&quot; alt=&quot;placeholder&quot;/&gt;&lt;/a&gt;
+</pre>
+<br>
+<h4>
+	4. Photo - No transition</h4>
+<pre class="brush: js">
+$(&quot;a[rel=&#39;example3&#39;]&quot;).colorbox({transition:&quot;none&quot;});</pre>
+<p>	It will show the photo with fade transition.</p>
+<p class="info">
+	Usage: Add &quot;example1&quot; to the rel attribute of the anchor tag.</p>
+<pre class="brush: html">
+&lt;a href=&quot;img/stock/600x400_gallery_placeholder_1.jpg&quot; rel=&quot;example3&quot; &gt;&lt;img src=&quot;img/stock/270x204_gallery_placeholder_1.jpg&quot; alt=&quot;placeholder&quot;/&gt;&lt;/a&gt;
+</pre>
+<br>
+<h4>
+	5. Photo - Slideshow</h4>
+<pre class="brush: js">
+$(&quot;a[rel=&#39;example4&#39;]&quot;).colorbox({slideshow:true});</pre>
+<p>	It will show the photo with fade transition.</p>
+<p class="info">
+	Usage: Add &quot;example4&quot; to the rel attribute of the anchor tag.</p>
+<pre class="brush: html">
+&lt;a href=&quot;img/stock/600x400_gallery_placeholder_1.jpg&quot; rel=&quot;example4&quot; &gt;&lt;img src=&quot;img/stock/270x204_gallery_placeholder_1.jpg&quot; alt=&quot;placeholder&quot;/&gt;&lt;/a&gt;
+</pre>
+<br>
+<p>	You can modify the transition by changing the parameter and the rel attribute.</p>
+<p>	Please read <a href="http://colorpowered.com/colorbox/" target="_blank">here </a>for full list of parameters and methods</p>
+</section>
+<section id="twitter_feed">
+	<h3>Twitter Feed</h3><hr class="notop">
+<p>The Twitter feed will appear in the footer area of each pages.</p>
+<p>Usage:</p> 
+<ol>
+<li>Open p2.js</li>
+<li>Find these code:<br/>
+<pre>
+$(document).ready(function() {
+	$("#twitter").getTwitter({
+		userName: "envato",
+		numTweets: 1,
+		loaderText: "Loading tweets...",
+		slideIn: true,
+		showHeading: true,
+		headingText: "Latest Tweets",
+		showProfileLink: true
+	});
+});
+</pre>
+</li>
+<li>Fill your username in the username parameter</li>
+</ol>
+</section>
+<section id="contact_form">
+	<h3>Contact Form</h3><hr class="notop">
+<p class="info">	In order to make the contact form works, you have to open contact.php and replace &#39;<em>your email</em>&#39; with your email address.</p>
+</section>
+<section id="javascript">
+	<h3>JavaScript</h3><hr class="notop">
+<p>
+	All javascript files is in the js folder. This theme imports these Javascript files:</p>
+<h5>
+	<strong>1. cufon </strong>(cufon-yui.js and Museo.font.js )</h5>
+<p>
+	This script is used to replace the fonts with non-standard fonts. The font I used for this theme is Museo and Museo Sans. You can replace any text with cufon by adding &quot;replace&quot; class. The Cufon is initiated in p2.js.</p>
+<pre class="brush: js">
+// Cufon Cufon.replace(&#39;.replace&#39;,{fontFamily: &#39;Museo 500&#39;} ); Cufon.replace(&#39;.sf-menu a,.sidebar-widget h4&#39;,{fontFamily: &#39;Museo Sans 500&#39;} );
+</pre>
+<p>
+	<a href="http://wiki.github.com/sorccu/cufon" target="_blank">More information</a> about cufon.</p>
+<p>
+	&nbsp;</p>
+<h5>
+	<strong>2. ColorBox v1.3.15</strong> (jquery.colorbox.js)</h5>
+<p>
+	A full featured, light-weight, customizable lightbox based on jQuery 1.3+ by Jack Moore. Full documentation <a href="http://colorpowered.com/colorbox/" target="_blank">here</a>.</p>
+<p>
+	&nbsp;</p>
+<h5>
+	<strong>3.&nbsp;&nbsp; &nbsp;jQuery Form 2.18</strong> (jquery.form.js)</h5>
+<p>
+	The jQuery Form Plugin allows you to easily and unobtrusively upgrade HTML forms to use AJAX. Full documentation at <a href="http://jquery.malsup.com/form/" target="_blank">http://jquery.malsup.com/form/</a></p>
+<p>
+	&nbsp;</p>
+<h5>
+	<strong>4. Nivo slider 2.4.</strong> (jquery.nivo.slider.pack.js)</h5>
+<p>
+	A jquery slider by Gilbert Pellegrom. You can read further documentation at <a href="http://nivo.dev7studios.com/" target="_blank">http://nivo.dev7studios.com/</a></p>
+<p>
+	&nbsp;</p>
+<h5>
+	<strong>5. Tiny Carousel 1.8</strong> (jquery.tinycarousel.min)</h5>
+<p>
+	A lightweight carousel for sliding html based content by Maarten Baijs. Full documentation at <a href="http://www.baijs.nl/tinycarousel/" target="_blank">http://www.baijs.nl/tinycarousel/</a></p>
+<p>
+	&nbsp;</p>
+<h5>
+	<strong>6. Superfish v1.4.8. </strong>(superfish-compile.js)</h5>
+<p>
+	A jQuery menu widget. Full documentation at <a href="http://plugins.jquery.com/project/Superfish" target="_blank">http://plugins.jquery.com/project/Superfish</a></p>
+<p>
+	&nbsp;</p>
+<h5>
+	<strong>7. Supersized Version 3.1.3 Core</strong>&nbsp; (supersized.3.1.3.core.min)</h5>
+<p>
+	Fullscreen Background jQuery Plugin by Sam Dunn. Full documentation at <a href="http://www.buildinternet.com/project/supersized">www.buildinternet.com/project/supersized</a></p>
+<p>
+	&nbsp;</p>
+<h5>
+	<strong>8. jQuery Tweet </strong>(jquery.tweet.js)</h5>
+<p>
+	A jquery&nbsp; plugin for Twitter. <a href="http://tweet.seaofclouds.com/">http://tweet.seaofclouds.com/</a></p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="psd_files">
+	<h3>PSD Files</h3><hr class="notop">
+<p>	There are 22 PSD included in this theme:</p>
+<ol>
+	<li>		<h5>Home Page layout in 5 color styles</h5>
+		<ul>			<li>				index.psd</li>
+			<li>				index-alpha.psd</li>
+			<li>				index-bravo.psd</li>
+			<li>				index-charlie.psd</li>
+			<li>				index-delta.psd</li>
+		</ul>
+	</li>
+	<li>		<h5>9 PSDs layout in the default style:</h5>
+		<ul>			<li>				about.psd</li>
+			<li>				blog-1.psd</li>
+			<li>				blog-2.psd</li>
+			<li>				contact.psd</li>
+			<li>				full-width.psd</li>
+			<li>				landing.psd</li>
+			<li>				search.psd</li>
+			<li>				single.psd</li>
+			<li>				testimonials.psd</li>
+		</ul>
+		<img alt="" src="assets/images/image_10.jpg" style="width: 600px; height: 415px;"></li>
+	<li>		<h5>18 PSDs of the web elements (icons, widgets, etc)</h5>.<br>
+		<img alt="" src="assets/images/image_9.jpg" style="width: 600px; height: 395px;"></li>
+</ol>
+<p>	You can find the background alternatives in the index.psd.</p>
+</section>
+<section id="sources_and_credits">
+	<h3>Sources and Credits</h3><hr class="notop">
+<p>	All icons and font in this theme are free to share. Credits belong to:</p>
+<p>	<strong>Icons</strong></p>
+<ul>	<li>		<a href="http://www.doublejdesign.co.uk/2010/03/social-media-balloons/" target="_blank">Social Media Balloons</a> by Double-J designs. Licensed under Creative Commons.</li>
+	<li>		<a href="http://www.brightmix.com/blog/more-icons-in-the-brightmix-icon-set-free-for-all/" target="_blank">Brightmix</a> by Brightmix. Licensed under WTFPL.</li>
+	<li>		<a href="http://somerandomdude.com/projects/iconic/" target="_blank">Iconic</a> by P.J. Onori. Licensed under Creative Commons.</li>
+</ul>
+<p>	<strong>Font</strong></p>
+<ul>	<li>		<a href="http://www.exljbris.com/museo.html">Museo</a> by Jos Buivenga <a href="http://www.exljbris.com" target="_blank"> (exljbris)</a>.</li>
+</ul>
+</section>
+<section id="epilogue">
+	<h3>Epilogue</h3><hr class="notop">
+<p>
+	I ask that everyone please do not distribute this theme illegally. This theme represent weeks of work (sometimes months).<br>
+	I will lose potential income if they are illegally distributed. This is the income that I spend to pay my bills.<br>
+	So please, do not distribute illegally. And if you see a source of illegal files, please notify Envato team.</p>
+<p>
+	Thank you,<br>
+	<br>
+	P2</p>
+</section>
+
+	</div>
+</body>
+</html>
