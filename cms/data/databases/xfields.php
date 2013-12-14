@@ -1,0 +1,1 @@
+<?php die();?>a:1:{s:15:"uvod_odkaz_link";a:6:{s:4:"name";s:15:"uvod_odkaz_link";s:3:"var";s:15:"uvod_odkaz_link";s:7:"section";s:5:"posts";s:4:"type";s:5:"input";s:7:"options";s:0:"";s:8:"required";i:0;}}
