@@ -1,0 +1,1 @@
+<?php die();?>a:1:{i:1;a:2:{s:4:"name";s:7:"galeria";s:9:"parent_id";i:0;}}
