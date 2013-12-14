@@ -69,7 +69,7 @@
 							$mn_cat = '2';
 						  	$mn_tmpl = 'odkazy_uvod';
 						  	$_GET['mn_post'] = '0';
-						  	include '/Applications/XAMPP/xamppfiles/htdocs/david/skolka/cms/mn-show.php';
+						  	include '/home/kovkus/msmiskovecka.eu/htdocs/www/cms/mn-show.php';
 						  	$_GET['mn_post'] = $old_mnpost;
 						}
 						elseif (isset($_GET['mn_page'])) {
@@ -77,7 +77,7 @@
 							$mn_cat = '2';
 						  	$mn_tmpl = 'odkazy_uvod';
 						  	$_GET['mn_page'] = '0';
-						  	include '/Applications/XAMPP/xamppfiles/htdocs/david/skolka/cms/mn-show.php';
+						  	include '/home/kovkus/msmiskovecka.eu/htdocs/www/cms/mn-show.php';
 						  	 $_GET['mn_page'] = $old_mnpage;
 						}
 						elseif (isset($_GET['mn_cat'])) {
@@ -85,13 +85,13 @@
 							$mn_cat = '2';
 						  	$mn_tmpl = 'odkazy_uvod';
 						  	$_GET['mn_cat'] = '0';
-						  	include '/Applications/XAMPP/xamppfiles/htdocs/david/skolka/cms/mn-show.php';
+						  	include '/home/kovkus/msmiskovecka.eu/htdocs/www/cms/mn-show.php';
 						  	 $_GET['mn_cat'] = $old_mnpage;
 						}
 						else {
 							$mn_cat = '2';
 						  	$mn_tmpl = 'odkazy_uvod';
-						  	include '/Applications/XAMPP/xamppfiles/htdocs/david/skolka/cms/mn-show.php';
+						  	include '/home/kovkus/msmiskovecka.eu/htdocs/www/cms/mn-show.php';
 						}
 						 
 						
@@ -110,13 +110,13 @@
     error_reporting(E_ALL ^ E_NOTICE);
      if (!$_GET['page']) {
      // include "pages/intro.php";
-     	include '/Applications/XAMPP/xamppfiles/htdocs/david/skolka/cms/mn-show.php';
+     	include '/home/kovkus/msmiskovecka.eu/htdocs/www/cms/mn-show.php';
      }
      elseif ($_GET['page']=='fotoalbum') {
      	echo "<h2>Fotoalbum</h2>";
 	  $mn_cat = '4';
 	  $mn_tmpl = 'fotoalbum';
-	  include '/Applications/XAMPP/xamppfiles/htdocs/david/skolka/cms/mn-show.php';
+	  include '/home/kovkus/msmiskovecka.eu/htdocs/www/cms/mn-show.php';
      }
      else {
      //include "pages/".$_GET['page'].".php";
