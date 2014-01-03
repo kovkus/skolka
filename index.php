@@ -113,10 +113,19 @@
      	include '/home/kovkus/msmiskovecka.eu/htdocs/www/cms/mn-show.php';
      }
      elseif ($_GET['page']=='fotoalbum') {
-     	echo "<h2>Fotoalbum</h2>";
+     	echo '<div class="sidebar-widget shadow-light">
+					<div class="minimal">
+						<h4 class="replace">Fotoalbumy</h4>
+						<ul class="reg-item">';
+		
 	  $mn_cat = '4';
 	  $mn_tmpl = 'fotoalbum';
 	  include '/home/kovkus/msmiskovecka.eu/htdocs/www/cms/mn-show.php';
+	  echo '					
+						</ul>
+					</div>
+				</div>
+';
      }
      else {
      //include "pages/".$_GET['page'].".php";
